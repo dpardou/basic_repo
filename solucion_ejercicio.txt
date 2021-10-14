@@ -1,0 +1,48 @@
+dpardo@MacBook-Pro-de-David git % mkdir basic_repo
+dpardo@MacBook-Pro-de-David git % cd basic_repo 
+dpardo@MacBook-Pro-de-David basic_repo % touch index.html
+dpardo@MacBook-Pro-de-David basic_repo % touch solucion_ejercicio.txt
+dpardo@MacBook-Pro-de-David basic_repo % touch style.css
+dpardo@MacBook-Pro-de-David basic_repo % git add .
+fatal: Not a git repository (or any of the parent directories): .git
+dpardo@MacBook-Pro-de-David basic_repo % git init
+Initialized empty Git repository in /Users/dpardo/Desktop/Bootcamp MERN/Fundamentos de la Web/git/basic_repo/.git/
+dpardo@MacBook-Pro-de-David basic_repo % git add .
+dpardo@MacBook-Pro-de-David basic_repo % git commit -m "Guardando los cambios del directorio basic_repo que incluyen el html, css y el txt"
+[master (root-commit) d100afb] Guardando los cambios del directorio basic_repo que incluyen el html, css y el txt
+ 3 files changed, 28 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 solucion_ejercicio.txt
+ create mode 100644 style.css
+dpardo@MacBook-Pro-de-David basic_repo % git log
+commit d100afb239f66f72bb1f06d63ef57d93b813cd35 (HEAD -> master)
+Author: David Pardo <dpardou@gmail.com>
+Date:   Wed Oct 13 22:16:19 2021 -0300
+
+    Guardando los cambios del directorio basic_repo que incluyen el html, css y el txt
+dpardo@MacBook-Pro-de-David basic_repo % git remote add origin https://github.com/dpardou/basic_repo.git
+dpardo@MacBook-Pro-de-David basic_repo % git push origin master
+Counting objects: 5, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 856 bytes | 856.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/dpardou/basic_repo.git
+ * [new branch]      master -> master
+dpardo@MacBook-Pro-de-David basic_repo % git add .
+dpardo@MacBook-Pro-de-David basic_repo % git commit -m "Se modificó el archivo index.html, se agregó un h2 y un nuevo <p> con lorem ipsum"
+[master 417bc89] Se modificó el archivo index.html, se agregó un h2 y un nuevo <p> con lorem ipsum
+ 1 file changed, 29 insertions(+), 14 deletions(-)
+ rewrite index.html (65%)
+dpardo@MacBook-Pro-de-David basic_repo % git remote add origin https://github.com/dpardou/basic_repo.git
+fatal: remote origin already exists.
+dpardo@MacBook-Pro-de-David basic_repo % git push origin master
+Counting objects: 3, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 607 bytes | 607.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dpardou/basic_repo.git
+   d100afb..417bc89  master -> master
+dpardo@MacBook-Pro-de-David basic_repo % 
