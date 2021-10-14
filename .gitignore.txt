@@ -1,0 +1,17 @@
+# ignora cualquier directorio llamado "packages"
+packages/
+# ignora cualquier archivo llamado "secret.txt"copy
+secret.js
+# ignora cualquier archivo con extensión .txt
+*.txt
+# ignora cualquier archivo o directorio que comienza con "log", como login
+log*
+
+# ignora un archivo llamado "hidden.txt" ubicado en la raíz de tu directorio de trabajo
+/hidden.txt
+# ignora un directorio llamado "node_modules" ubicado en la raíz de tu directorio de trabajo
+/node_modules/
+
+
+# ignora cualquier archivo o directorio que termine con "data", como project_data/, big_file_of_data
+*data
